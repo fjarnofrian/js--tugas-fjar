@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Chat</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body  style="background-color: blanchedalmond;color: crimson;">
+	<center>
+			<div>
+  				<div>
+    				<h1> CHAT</h1>
+    				<div class="underline-title"></div>
+  				</div>
+			</div>
+			<div>
+    			<div style="color:blue">
+					<p class="welcome"><b>please your enter</b></p>
+    			</div>
+     			<form name="nama" action="">
+        			<input name="namauser" type="text" id="namauser"  placeholder="username" >
+    			</form>
+				<br>
+    			<form kontak="kontak" action="">
+        			<input name="kontak yang dituju" type="text" id="kontak yang dituju"  placeholder="kepada" >
+    			</form>
+    			<br>
+    			<div id="chatbox"></div>
+
+					<input name="usermsg" type="text" id="usermsg" placeholder="Pesan" >
+					<br>
+					<br>
+        			<input name="submit" type="submit" id="submit" value="kirim" >
+           <script type="text/javascript">
+	            function kirim() {
+	            	pesan = document.getElementById("pesan").value;
+	            	document.getElementById("isichat").innerHTML = pesan+'\n';
+		           return false;
+	             }
+ 			   </script>
+ 			   </div>
+	    </body>
+</html>
